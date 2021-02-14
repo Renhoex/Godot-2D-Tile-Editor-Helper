@@ -247,7 +247,7 @@ func _process(delta):
 							
 							var loopArea = Vector2(fposmod (i,pattern.size()),fposmod (j,pattern[0].size()));
 							
-							parent.set_cell((minOff.x/16)+i,(minOff.y/16)+j,
+							parent.set_cell((minOff.x/cellSize.x)+i,(minOff.y/cellSize.y)+j,
 							pattern[loopArea.x][loopArea.y][0],
 							pattern[loopArea.x][loopArea.y][2].x,
 							pattern[loopArea.x][loopArea.y][2].y,false,
